@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowRight, Github, Mail } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
+import GithubIcon from './GithubIcon';
 import './Hero.css';
 
 const Hero = () => {
@@ -30,7 +31,7 @@ const Hero = () => {
           
           <div className="hero-social">
             <a href="https://github.com/abhi07mehta" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github size={22} />
+              <GithubIcon size={22} />
             </a>
             <a href="mailto:abhishek10mehta@gmail.com" aria-label="Email">
               <Mail size={22} />

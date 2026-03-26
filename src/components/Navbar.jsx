@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Mail } from 'lucide-react';
+import { Menu, X, Mail } from 'lucide-react';
+import GithubIcon from './GithubIcon';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="social-links">
-            <a href="https://github.com/abhi07mehta" target="_blank" rel="noopener noreferrer"><Github size={20} /></a>
+            <a href="https://github.com/abhi07mehta" target="_blank" rel="noopener noreferrer"><GithubIcon size={20} /></a>
             <a href="mailto:abhishek10mehta@gmail.com"><Mail size={20} /></a>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import GithubIcon from './GithubIcon';
 import './Projects.css';
 
 const Projects = () => {
@@ -53,7 +54,7 @@ const Projects = () => {
                 <div className="project-top">
                   <div className="project-links">
                     <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                      <Github size={20} />
+                      <GithubIcon size={20} />
                     </a>
                   </div>
                   <h3 className="project-title">{project.title}</h3>
