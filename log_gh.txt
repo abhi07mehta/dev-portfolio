@@ -1,0 +1,179 @@
+﻿deploy	Set up job	∩╗┐2026-03-26T18:45:59.2674600Z Current runner version: '2.332.0'
+deploy	Set up job	2026-03-26T18:45:59.2700009Z ##[group]Runner Image Provisioner
+deploy	Set up job	2026-03-26T18:45:59.2700921Z Hosted Compute Agent
+deploy	Set up job	2026-03-26T18:45:59.2701531Z Version: 20260213.493
+deploy	Set up job	2026-03-26T18:45:59.2702121Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+deploy	Set up job	2026-03-26T18:45:59.2702853Z Build Date: 2026-02-13T00:28:41Z
+deploy	Set up job	2026-03-26T18:45:59.2703508Z Worker ID: {5a06f362-d704-4be1-9b77-37336bfe7986}
+deploy	Set up job	2026-03-26T18:45:59.2704141Z Azure Region: eastus
+deploy	Set up job	2026-03-26T18:45:59.2704743Z ##[endgroup]
+deploy	Set up job	2026-03-26T18:45:59.2706134Z ##[group]Operating System
+deploy	Set up job	2026-03-26T18:45:59.2706806Z Ubuntu
+deploy	Set up job	2026-03-26T18:45:59.2707359Z 24.04.3
+deploy	Set up job	2026-03-26T18:45:59.2707789Z LTS
+deploy	Set up job	2026-03-26T18:45:59.2708543Z ##[endgroup]
+deploy	Set up job	2026-03-26T18:45:59.2709168Z ##[group]Runner Image
+deploy	Set up job	2026-03-26T18:45:59.2709796Z Image: ubuntu-24.04
+deploy	Set up job	2026-03-26T18:45:59.2710291Z Version: 20260309.50.1
+deploy	Set up job	2026-03-26T18:45:59.2711283Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260309.50/images/ubuntu/Ubuntu2404-Readme.md
+deploy	Set up job	2026-03-26T18:45:59.2712863Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260309.50
+deploy	Set up job	2026-03-26T18:45:59.2713860Z ##[endgroup]
+deploy	Set up job	2026-03-26T18:45:59.2714863Z ##[group]GITHUB_TOKEN Permissions
+deploy	Set up job	2026-03-26T18:45:59.2716948Z Contents: read
+deploy	Set up job	2026-03-26T18:45:59.2717551Z Metadata: read
+deploy	Set up job	2026-03-26T18:45:59.2718021Z Pages: write
+deploy	Set up job	2026-03-26T18:45:59.2718887Z ##[endgroup]
+deploy	Set up job	2026-03-26T18:45:59.2721206Z Secret source: Actions
+deploy	Set up job	2026-03-26T18:45:59.2722180Z Prepare workflow directory
+deploy	Set up job	2026-03-26T18:45:59.3036645Z Prepare all required actions
+deploy	Set up job	2026-03-26T18:45:59.3074095Z Getting action download info
+deploy	Set up job	2026-03-26T18:45:59.7444773Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+deploy	Set up job	2026-03-26T18:45:59.8655846Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+deploy	Set up job	2026-03-26T18:45:59.9582618Z Download action repository 'actions/configure-pages@v4' (SHA:1f0c5cde4bc74cd7e1254d0cb4de8d49e9068c7d)
+deploy	Set up job	2026-03-26T18:46:00.2523492Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+deploy	Set up job	2026-03-26T18:46:00.4113784Z Download action repository 'actions/deploy-pages@v4' (SHA:d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e)
+deploy	Set up job	2026-03-26T18:46:00.8080079Z Getting action download info
+deploy	Set up job	2026-03-26T18:46:00.9350729Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+deploy	Set up job	2026-03-26T18:46:01.0874231Z Complete job name: deploy
+deploy	Checkout	∩╗┐2026-03-26T18:46:01.1716568Z ##[group]Run actions/checkout@v4
+deploy	Checkout	2026-03-26T18:46:01.1717842Z with:
+deploy	Checkout	2026-03-26T18:46:01.1718856Z   repository: abhi07mehta/dev-portfolio
+deploy	Checkout	2026-03-26T18:46:01.1720104Z   token: ***
+deploy	Checkout	2026-03-26T18:46:01.1720837Z   ssh-strict: true
+deploy	Checkout	2026-03-26T18:46:01.1721837Z   ssh-user: git
+deploy	Checkout	2026-03-26T18:46:01.1722595Z   persist-credentials: true
+deploy	Checkout	2026-03-26T18:46:01.1723465Z   clean: true
+deploy	Checkout	2026-03-26T18:46:01.1724222Z   sparse-checkout-cone-mode: true
+deploy	Checkout	2026-03-26T18:46:01.1725153Z   fetch-depth: 1
+deploy	Checkout	2026-03-26T18:46:01.1725883Z   fetch-tags: false
+deploy	Checkout	2026-03-26T18:46:01.1726663Z   show-progress: true
+deploy	Checkout	2026-03-26T18:46:01.1727420Z   lfs: false
+deploy	Checkout	2026-03-26T18:46:01.1728119Z   submodules: false
+deploy	Checkout	2026-03-26T18:46:01.1729010Z   set-safe-directory: true
+deploy	Checkout	2026-03-26T18:46:01.1730132Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.2870004Z Syncing repository: abhi07mehta/dev-portfolio
+deploy	Checkout	2026-03-26T18:46:01.2872566Z ##[group]Getting Git version info
+deploy	Checkout	2026-03-26T18:46:01.2873998Z Working directory is '/home/runner/work/dev-portfolio/dev-portfolio'
+deploy	Checkout	2026-03-26T18:46:01.2875955Z [command]/usr/bin/git version
+deploy	Checkout	2026-03-26T18:46:01.2995028Z git version 2.53.0
+deploy	Checkout	2026-03-26T18:46:01.3025104Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.3041126Z Temporarily overriding HOME='/home/runner/work/_temp/0056f813-b827-4e5e-9184-c9dd5b1f41ea' before making global git config changes
+deploy	Checkout	2026-03-26T18:46:01.3045804Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Checkout	2026-03-26T18:46:01.3057764Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/dev-portfolio/dev-portfolio
+deploy	Checkout	2026-03-26T18:46:01.3101341Z Deleting the contents of '/home/runner/work/dev-portfolio/dev-portfolio'
+deploy	Checkout	2026-03-26T18:46:01.3105114Z ##[group]Initializing the repository
+deploy	Checkout	2026-03-26T18:46:01.3109656Z [command]/usr/bin/git init /home/runner/work/dev-portfolio/dev-portfolio
+deploy	Checkout	2026-03-26T18:46:01.3240922Z hint: Using 'master' as the name for the initial branch. This default branch name
+deploy	Checkout	2026-03-26T18:46:01.3244362Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+deploy	Checkout	2026-03-26T18:46:01.3247743Z hint: to use in all of your new repositories, which will suppress this warning,
+deploy	Checkout	2026-03-26T18:46:01.3250733Z hint: call:
+deploy	Checkout	2026-03-26T18:46:01.3252272Z hint:
+deploy	Checkout	2026-03-26T18:46:01.3254082Z hint: 	git config --global init.defaultBranch <name>
+deploy	Checkout	2026-03-26T18:46:01.3256322Z hint:
+deploy	Checkout	2026-03-26T18:46:01.3262149Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+deploy	Checkout	2026-03-26T18:46:01.3266196Z hint: 'development'. The just-created branch can be renamed via this command:
+deploy	Checkout	2026-03-26T18:46:01.3269487Z hint:
+deploy	Checkout	2026-03-26T18:46:01.3270965Z hint: 	git branch -m <name>
+deploy	Checkout	2026-03-26T18:46:01.3272319Z hint:
+deploy	Checkout	2026-03-26T18:46:01.3274178Z hint: Disable this message with "git config set advice.defaultBranchName false"
+deploy	Checkout	2026-03-26T18:46:01.3277011Z Initialized empty Git repository in /home/runner/work/dev-portfolio/dev-portfolio/.git/
+deploy	Checkout	2026-03-26T18:46:01.3285327Z [command]/usr/bin/git remote add origin https://github.com/abhi07mehta/dev-portfolio
+deploy	Checkout	2026-03-26T18:46:01.3312693Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.3314673Z ##[group]Disabling automatic garbage collection
+deploy	Checkout	2026-03-26T18:46:01.3317089Z [command]/usr/bin/git config --local gc.auto 0
+deploy	Checkout	2026-03-26T18:46:01.3347878Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.3349365Z ##[group]Setting up auth
+deploy	Checkout	2026-03-26T18:46:01.3354216Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Checkout	2026-03-26T18:46:01.3388417Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Checkout	2026-03-26T18:46:01.3782706Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Checkout	2026-03-26T18:46:01.3817658Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Checkout	2026-03-26T18:46:01.4046587Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Checkout	2026-03-26T18:46:01.4087739Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Checkout	2026-03-26T18:46:01.4321468Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+deploy	Checkout	2026-03-26T18:46:01.4355451Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.4356804Z ##[group]Fetching the repository
+deploy	Checkout	2026-03-26T18:46:01.4367357Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +97cde41ce9f6c256d37ced0adb5efdc9c5d3f163:refs/remotes/origin/master
+deploy	Checkout	2026-03-26T18:46:01.6562892Z From https://github.com/abhi07mehta/dev-portfolio
+deploy	Checkout	2026-03-26T18:46:01.6564663Z  * [new ref]         97cde41ce9f6c256d37ced0adb5efdc9c5d3f163 -> origin/master
+deploy	Checkout	2026-03-26T18:46:01.6597918Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.6600111Z ##[group]Determining the checkout info
+deploy	Checkout	2026-03-26T18:46:01.6601593Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.6606297Z [command]/usr/bin/git sparse-checkout disable
+deploy	Checkout	2026-03-26T18:46:01.6651743Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+deploy	Checkout	2026-03-26T18:46:01.6680050Z ##[group]Checking out the ref
+deploy	Checkout	2026-03-26T18:46:01.6683765Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+deploy	Checkout	2026-03-26T18:46:01.6742991Z Reset branch 'master'
+deploy	Checkout	2026-03-26T18:46:01.6746707Z branch 'master' set up to track 'origin/master'.
+deploy	Checkout	2026-03-26T18:46:01.6754431Z ##[endgroup]
+deploy	Checkout	2026-03-26T18:46:01.6787534Z [command]/usr/bin/git log -1 --format=%H
+deploy	Checkout	2026-03-26T18:46:01.6810153Z 97cde41ce9f6c256d37ced0adb5efdc9c5d3f163
+deploy	Set up Node	∩╗┐2026-03-26T18:46:01.7097812Z ##[group]Run actions/setup-node@v4
+deploy	Set up Node	2026-03-26T18:46:01.7098973Z with:
+deploy	Set up Node	2026-03-26T18:46:01.7099637Z   node-version: 20
+deploy	Set up Node	2026-03-26T18:46:01.7100359Z   cache: npm
+deploy	Set up Node	2026-03-26T18:46:01.7101036Z   always-auth: false
+deploy	Set up Node	2026-03-26T18:46:01.7101799Z   check-latest: false
+deploy	Set up Node	2026-03-26T18:46:01.7102795Z   token: ***
+deploy	Set up Node	2026-03-26T18:46:01.7103465Z ##[endgroup]
+deploy	Set up Node	2026-03-26T18:46:01.8891124Z Found in cache @ /opt/hostedtoolcache/node/20.20.1/x64
+deploy	Set up Node	2026-03-26T18:46:01.8896882Z ##[group]Environment details
+deploy	Set up Node	2026-03-26T18:46:02.2817667Z node: v20.20.1
+deploy	Set up Node	2026-03-26T18:46:02.2819359Z npm: 10.8.2
+deploy	Set up Node	2026-03-26T18:46:02.2820575Z yarn: 1.22.22
+deploy	Set up Node	2026-03-26T18:46:02.2823157Z ##[endgroup]
+deploy	Set up Node	2026-03-26T18:46:02.2841313Z [command]/opt/hostedtoolcache/node/20.20.1/x64/bin/npm config get cache
+deploy	Set up Node	2026-03-26T18:46:02.4024212Z /home/runner/.npm
+deploy	Set up Node	2026-03-26T18:46:02.5000976Z npm cache is not found
+deploy	Install dependencies	∩╗┐2026-03-26T18:46:02.5167299Z ##[group]Run npm ci || npm install
+deploy	Install dependencies	2026-03-26T18:46:02.5168552Z [36;1mnpm ci || npm install[0m
+deploy	Install dependencies	2026-03-26T18:46:02.5233308Z shell: /usr/bin/bash -e {0}
+deploy	Install dependencies	2026-03-26T18:46:02.5234188Z ##[endgroup]
+deploy	Install dependencies	2026-03-26T18:46:05.1959875Z 
+deploy	Install dependencies	2026-03-26T18:46:05.1970955Z added 66 packages, and audited 67 packages in 3s
+deploy	Install dependencies	2026-03-26T18:46:05.1971657Z 
+deploy	Install dependencies	2026-03-26T18:46:05.1971991Z 9 packages are looking for funding
+deploy	Install dependencies	2026-03-26T18:46:05.1972540Z   run `npm fund` for details
+deploy	Install dependencies	2026-03-26T18:46:05.1973011Z 
+deploy	Install dependencies	2026-03-26T18:46:05.1973676Z found 0 vulnerabilities
+deploy	Build	∩╗┐2026-03-26T18:46:05.2151863Z ##[group]Run npm run build
+deploy	Build	2026-03-26T18:46:05.2152174Z [36;1mnpm run build[0m
+deploy	Build	2026-03-26T18:46:05.2202706Z shell: /usr/bin/bash -e {0}
+deploy	Build	2026-03-26T18:46:05.2202995Z ##[endgroup]
+deploy	Build	2026-03-26T18:46:05.3335751Z 
+deploy	Build	2026-03-26T18:46:05.3336611Z > dev-portfolio@1.0.0 build
+deploy	Build	2026-03-26T18:46:05.3337053Z > vite build
+deploy	Build	2026-03-26T18:46:05.3337220Z 
+deploy	Build	2026-03-26T18:46:05.5478646Z [36mvite v6.4.1 [32mbuilding for production...[36m[39m
+deploy	Build	2026-03-26T18:46:05.6096499Z transforming...
+deploy	Build	2026-03-26T18:46:07.9138102Z [32mΓ£ô[39m 1749 modules transformed.
+deploy	Build	2026-03-26T18:46:08.1330543Z rendering chunks...
+deploy	Build	2026-03-26T18:46:08.1414985Z computing gzip size...
+deploy	Build	2026-03-26T18:46:08.1529381Z [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.54 kB[22m[1m[22m[2m Γöé gzip:  0.32 kB[22m
+deploy	Build	2026-03-26T18:46:08.1531355Z [2mdist/[22m[2massets/[22m[35mindex-DdTGn7Hi.css  [39m[1m[2m 13.20 kB[22m[1m[22m[2m Γöé gzip:  3.30 kB[22m
+deploy	Build	2026-03-26T18:46:08.1534575Z [2mdist/[22m[2massets/[22m[36mindex-75C3NWIO.js   [39m[1m[2m211.65 kB[22m[1m[22m[2m Γöé gzip: 65.48 kB[22m
+deploy	Build	2026-03-26T18:46:08.1544896Z [32mΓ£ô built in 2.58s[39m
+deploy	Setup Pages	∩╗┐2026-03-26T18:46:08.2049970Z ##[group]Run actions/configure-pages@v4
+deploy	Setup Pages	2026-03-26T18:46:08.2050329Z with:
+deploy	Setup Pages	2026-03-26T18:46:08.2050636Z   token: ***
+deploy	Setup Pages	2026-03-26T18:46:08.2050839Z   enablement: false
+deploy	Setup Pages	2026-03-26T18:46:08.2051029Z ##[endgroup]
+deploy	Setup Pages	2026-03-26T18:46:08.4011371Z ##[error]Get Pages site failed. Please verify that the repository has Pages enabled and configured to build using GitHub Actions, or consider exploring the `enablement` parameter for this action.
+deploy	Setup Pages	2026-03-26T18:46:08.4024230Z ##[error]HttpError: Not Found
+deploy	Post Checkout	∩╗┐2026-03-26T18:46:08.4135341Z Post job cleanup.
+deploy	Post Checkout	2026-03-26T18:46:08.5151335Z [command]/usr/bin/git version
+deploy	Post Checkout	2026-03-26T18:46:08.5198625Z git version 2.53.0
+deploy	Post Checkout	2026-03-26T18:46:08.5251480Z Temporarily overriding HOME='/home/runner/work/_temp/f858c465-af68-423d-8107-96b23b7423a0' before making global git config changes
+deploy	Post Checkout	2026-03-26T18:46:08.5252590Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Post Checkout	2026-03-26T18:46:08.5266939Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/dev-portfolio/dev-portfolio
+deploy	Post Checkout	2026-03-26T18:46:08.5307187Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Post Checkout	2026-03-26T18:46:08.5346729Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Post Checkout	2026-03-26T18:46:08.5612142Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Post Checkout	2026-03-26T18:46:08.5635364Z http.https://github.com/.extraheader
+deploy	Post Checkout	2026-03-26T18:46:08.5650709Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+deploy	Post Checkout	2026-03-26T18:46:08.5684528Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Post Checkout	2026-03-26T18:46:08.5935258Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Post Checkout	2026-03-26T18:46:08.5970386Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Complete job	∩╗┐2026-03-26T18:46:08.6334264Z Evaluate and set environment url
+deploy	Complete job	2026-03-26T18:46:08.6338107Z Evaluated environment url: 
+deploy	Complete job	2026-03-26T18:46:08.6339458Z Cleaning up orphan processes
+deploy	Complete job	2026-03-26T18:46:08.6662302Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/configure-pages@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

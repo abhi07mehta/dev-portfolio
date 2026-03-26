@@ -1,9 +1,12 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import GithubIcon from './GithubIcon';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 import './Projects.css';
 
 const Projects = () => {
+  const [sectionRef, isVisible] = useScrollReveal(0.1);
+
   const projects = [
     {
       title: 'job-net',
@@ -44,37 +47,44 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects-section">
-      <div className="container">
-        <h2 className="section-title">Featured Projects</h2>
-        
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div className={`project-card ${project.featured ? 'featured' : ''}`} key={index}>
-              <div className="project-content">
-                <div className="project-top">
-                  <div className="project-links">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                      <GithubIcon size={20} />
-                    </a>
+      <div className="container" ref={sectionRef}>
+        <div className={`projects-wrapper ${isVisible ? 'visible' : ''}`}>
+          <h2 className="section-title">Featured Projects</h2>
+          
+          <div className="projects-grid">
+            {projects.map((project, index) => (
+              <div 
+                className={`project-card ${project.featured ? 'featured' : ''}`} 
+                key={index}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="project-content">
+                  <div className="project-top">
+                    <div className="project-links">
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <GithubIcon size={20} />
+                      </a>
+                    </div>
+                    <h3 className="project-title">{project.title}</h3>
+                    <p className="project-description">{project.description}</p>
                   </div>
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                </div>
-                
-                <div className="project-tech">
-                  {project.tech.map((techItem, i) => (
-                    <span key={i} className="tech-badge">{techItem}</span>
-                  ))}
+                  
+                  <div className="project-tech">
+                    {project.tech.map((techItem, i) => (
+                      <span key={i} className="tech-badge">{techItem}</span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-        
-        <div className="more-projects">
-          <a href="https://github.com/abhi07mehta" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-            View Full Archive on GitHub
-          </a>
+            ))}
+          </div>
+          
+          <div className="more-projects">
+            <a href="https://github.com/abhi07mehta" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <GithubIcon size={18} />
+              View Full Archive on GitHub
+            </a>
+          </div>
         </div>
       </div>
     </section>

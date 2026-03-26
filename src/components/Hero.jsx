@@ -1,16 +1,27 @@
 import React from 'react';
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, Mail, Download } from 'lucide-react';
 import GithubIcon from './GithubIcon';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section id="home" className="hero-section">
+      {/* Background effects */}
+      <div className="hero-bg-effects">
+        <div className="gradient-orb orb-violet"></div>
+        <div className="gradient-orb orb-cyan"></div>
+        <div className="gradient-orb orb-pink"></div>
+        <div className="grid-overlay"></div>
+      </div>
+
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-badge">Available for new opportunities</div>
+          <div className="hero-badge">
+            <span className="badge-dot"></span>
+            Available for new opportunities
+          </div>
           <h1 className="hero-title">
-            Hi, I'm <span className="highlight">Abhishek Mehta</span>
+            Hi, I'm <span className="gradient-text">Abhishek Mehta</span>
           </h1>
           <h2 className="hero-subtitle">
             Full-Stack Developer building scalable web applications.
@@ -31,31 +42,32 @@ const Hero = () => {
           
           <div className="hero-social">
             <a href="https://github.com/abhi07mehta" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <GithubIcon size={22} />
+              <GithubIcon size={20} />
             </a>
             <a href="mailto:abhishek10mehta@gmail.com" aria-label="Email">
-              <Mail size={22} />
+              <Mail size={20} />
             </a>
           </div>
         </div>
         
         <div className="hero-visual">
-          <div className="glow-orb orb-1"></div>
-          <div className="glow-orb orb-2"></div>
-          <div className="glass-card main-card">
+          <div className="code-window">
             <div className="code-header">
-              <div className="dot close"></div>
-              <div className="dot minimize"></div>
-              <div className="dot expand"></div>
+              <div className="window-controls">
+                <span className="dot close"></span>
+                <span className="dot minimize"></span>
+                <span className="dot expand"></span>
+              </div>
+              <span className="file-name">developer.js</span>
             </div>
             <pre className="code-body">
               <code>
-<span className="keyword">const</span> <span className="entity">developer</span> = {'{'}
-  <span className="property">name</span>: <span className="string">'Abhishek Mehta'</span>,
-  <span className="property">role</span>: <span className="string">'Full-Stack Developer'</span>,
-  <span className="property">tech</span>: [<span className="string">'React'</span>, <span className="string">'Node.js'</span>, <span className="string">'MongoDB'</span>],
-  <span className="property">experience</span>: <span className="number">4</span> + <span className="string">' years'</span>,
-  <span className="property">passion</span>: <span className="string">'Building scalable web apps 🚀'</span>
+<span className="keyword">const</span> <span className="entity">developer</span> = {'{'}{'\n'}
+  <span className="property">name</span>: <span className="string">'Abhishek Mehta'</span>,{'\n'}
+  <span className="property">role</span>: <span className="string">'Full-Stack Developer'</span>,{'\n'}
+  <span className="property">tech</span>: [<span className="string">'React'</span>, <span className="string">'Node.js'</span>, <span className="string">'MongoDB'</span>],{'\n'}
+  <span className="property">experience</span>: <span className="number">4</span> + <span className="string">' years'</span>,{'\n'}
+  <span className="property">passion</span>: <span className="string">'Building scalable apps 🚀'</span>{'\n'}
 {'}'};
               </code>
             </pre>

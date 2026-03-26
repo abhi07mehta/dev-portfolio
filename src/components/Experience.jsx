@@ -1,8 +1,11 @@
 import React from 'react';
 import { Briefcase, Award } from 'lucide-react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 import './Experience.css';
 
 const Experience = () => {
+  const [sectionRef, isVisible] = useScrollReveal(0.1);
+
   const experiences = [
     {
       role: 'Full-Stack Developer',
@@ -27,31 +30,39 @@ const Experience = () => {
 
   return (
     <section id="experience" className="experience-section">
-      <div className="container">
-        <h2 className="section-title">Experience</h2>
-        
-        <div className="timeline">
-          {experiences.map((exp, index) => (
-            <div className="timeline-item" key={index}>
-              <div className="timeline-marker"></div>
-              <div className="timeline-content glass-panel">
-                <div className="timeline-header">
-                  <div className="role-company">
-                    <h3>{exp.role}</h3>
-                    <h4><Briefcase size={16} /> {exp.company}</h4>
-                  </div>
-                  <span className="period">{exp.period}</span>
+      <div className="container" ref={sectionRef}>
+        <div className={`experience-wrapper ${isVisible ? 'visible' : ''}`}>
+          <h2 className="section-title">Experience</h2>
+          
+          <div className="timeline">
+            {experiences.map((exp, index) => (
+              <div 
+                className="timeline-item" 
+                key={index}
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <div className="timeline-marker">
+                  <div className="marker-inner"></div>
                 </div>
-                <p className="description">{exp.description}</p>
-                {exp.highlight && (
-                  <div className="highlight-box">
-                    <Award size={18} />
-                    <span>{exp.highlight}</span>
+                <div className="timeline-content">
+                  <div className="timeline-header">
+                    <div className="role-company">
+                      <h3>{exp.role}</h3>
+                      <h4><Briefcase size={15} /> {exp.company}</h4>
+                    </div>
+                    <span className="period">{exp.period}</span>
                   </div>
-                )}
+                  <p className="description">{exp.description}</p>
+                  {exp.highlight && (
+                    <div className="highlight-box">
+                      <Award size={18} className="award-icon" />
+                      <span>{exp.highlight}</span>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
